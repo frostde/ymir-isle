@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "typescript-build": "tsc"
   },
   "dependencies": {
     "next": "latest",
