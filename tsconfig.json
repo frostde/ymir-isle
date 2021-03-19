@@ -22,10 +22,12 @@
     "resolveJsonModule": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.test.ts"
   ],
   "include": [
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "node_modules/@types"
   ]
 }
