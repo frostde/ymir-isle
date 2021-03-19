@@ -22,3 +22,12 @@ jobs:
         run: yarn build
       - name: Typescript
         run: yarn typescript-build
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
