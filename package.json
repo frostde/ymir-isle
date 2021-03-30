@@ -4,6 +4,7 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
+        "prettier": "prettier --write .",
         "start": "next start",
         "typescript-build": "tsc",
         "test": "jest",
