@@ -1,9 +1,15 @@
-import { User } from '../interfaces'
+import { Villager } from '../types'
 
-/** Dummy user data. */
-export const sampleUserData: User[] = [
-  { id: 101, name: 'Alice' },
-  { id: 102, name: 'Bob' },
-  { id: 103, name: 'Caroline' },
-  { id: 104, name: 'Dave' },
+/** Dummy villager data. */
+export const sampleUserData: Villager[] = [
+    { id: 1, name: 'Billy' },
+    { id: 2, name: 'Pashmina' },
+    { id: 3, name: 'Clay' },
+    { id: 4, name: 'Velma' },
+    { id: 5, name: 'Plucky' },
+    { id: 6, name: 'Savannah' },
+    { id: 7, name: 'Flora' },
+    { id: 8, name: 'Kidd' },
+    { id: 9, name: 'Melba' },
+    { id: 10, name: 'Hopper' },
 ]

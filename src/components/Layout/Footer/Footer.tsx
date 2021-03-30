@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-
 const Footer = () => (
     <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
+        <hr />
+        <span>Daniel Frost</span>
+        <span>me@danielfrost.io</span>
     </footer>
 )
 

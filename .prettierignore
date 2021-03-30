@@ -1,0 +1,5 @@
+build
+coverage
+.next
+.github
+node_modules
