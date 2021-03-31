@@ -1,4 +1,5 @@
 import firebase from 'firebase'
+
 const firebaseConfig = {
     apiKey: 'AIzaSyD_9MeUkYwz_9F7d_jfu9YMKNzaKBbZ2Xk',
     authDomain: 'ymir-isle.firebaseapp.com',
