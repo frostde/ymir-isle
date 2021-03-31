@@ -4,6 +4,7 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
+        "export": "next export",
         "prettier": "prettier --write .",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
