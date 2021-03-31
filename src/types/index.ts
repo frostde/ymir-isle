@@ -1,5 +1,5 @@
 export type Resident = {
-    id: number // TODO: refactor this to be a guid
+    id: string // TODO: refactor this to be a guid
     name: string
     birthdate?: string // TODO: refactor this to be a DateTime
 }

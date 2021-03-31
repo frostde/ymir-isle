@@ -14,7 +14,6 @@ const Header = () => (
             <Link href="/users">
                 <a>Villagers</a>
             </Link>{' '}
-            | <a href="/api/users">Users API</a>
         </nav>
     </header>
 )
