@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-import { User } from '../../interfaces'
+import { Villager } from '../../../types'
 
 type Props = {
-    data: User
+    data: Villager
 }
 
 const ListItem = ({ data }: Props) => (
