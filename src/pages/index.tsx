@@ -6,7 +6,7 @@ const IndexPage = () => (
         <h1>Ymir Isle</h1>
         <p>
             <Link href="/about">
-                <a>About</a>
+                <a>About (testing)</a>
             </Link>
         </p>
     </Layout>

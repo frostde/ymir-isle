@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Link from 'next/link'
 
 import { Villager } from '../../../types'
 
@@ -8,11 +7,9 @@ type Props = {
 }
 
 const ListItem = ({ data }: Props) => (
-    <Link href="/users/[id]" as={`/users/${data.id}`}>
-        <a>
-            {data.id}: {data.name}
-        </a>
-    </Link>
+    <span>
+        {data.id}: {data.name}
+    </span>
 )
 
 export default ListItem
