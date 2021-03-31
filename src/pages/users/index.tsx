@@ -1,33 +1,37 @@
-import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
 import { Villager } from '../../types'
-import { sampleUserData } from '../../utils/sample-data'
 import Layout from '../../components/Layout/Layout/Layout'
 import List from '../../components/List/List/List'
+import { useEffect, useState } from 'react'
+import fire from '../../../config/fire-config'
 
-type Props = {
-    items: Villager[]
-}
+var docRef = fire.firestore().collection('Villagers')
 
-const WithStaticProps = ({ items }: Props) => (
-    <Layout title="Users List | Next.js + TypeScript Example">
-        <h1>Villagers List</h1>
-        <List items={items} />
-        <p>
-            <Link href="/">
-                <a>Go home</a>
-            </Link>
-        </p>
-    </Layout>
-)
+const WithStaticProps = () => {
+    const [villagers, setVillagers] = useState<Villager[]>([])
 
-export const getStaticProps: GetStaticProps = async () => {
-    // Example for including static props in a Next.js function component page.
-    // Don't forget to include the respective types for any props passed into
-    // the component.
-    const items: Villager[] = sampleUserData
-    return { props: { items } }
+    useEffect(() => {
+        docRef.onSnapshot((snap) => {
+            const villagers = snap.docs.map((doc) => ({
+                id: doc.id,
+                name: doc.data().name as string,
+            }))
+            setVillagers(villagers)
+        })
+    })
+
+    return (
+        <Layout title="Users List | Next.js + TypeScript Example">
+            <h1>Villagers List</h1>
+            <List items={villagers} />
+            <p>
+                <Link href="/">
+                    <a>Go home</a>
+                </Link>
+            </p>
+        </Layout>
+    )
 }
 
 export default WithStaticProps

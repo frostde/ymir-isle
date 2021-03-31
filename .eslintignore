@@ -3,3 +3,6 @@ coverage
 .next
 .github
 node_modules
+.firebase
+.vscode
+out
