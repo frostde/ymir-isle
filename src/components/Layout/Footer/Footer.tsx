@@ -4,7 +4,7 @@ const Footer = () => (
     <footer>
         <hr />
         <span>Daniel Frost</span>
-        <span>me@danielfrost.io</span>
+        <span>me@danielfrost.io | 2021 </span>
     </footer>
 )
 
