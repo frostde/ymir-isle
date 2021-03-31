@@ -45,3 +45,12 @@ jobs:
         run: |
           yarn
           yarn lint
+  prettier:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+      - name: Prettier
+        run: |
+          yarn
+          yarn prettier
